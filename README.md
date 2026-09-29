@@ -1,10 +1,4 @@
-Absolutely. I cleaned it up while keeping the **actual content, architecture, test coverage, and terminology from your README**. 
 
-I also removed the accidental **“Then do the final check”** section at the bottom and made it look more like a polished GitHub take-home submission.
-
-Copy-paste this entire README into `README.md`:
-
-````markdown
 # 🎬 Autonomous Trailer Director
 
 > **An agentic AI system that plans, verifies, and selectively repairs audience-specific trailers from a single episode package.**
@@ -790,5 +784,6 @@ The project prioritizes:
 
 **GitHub:**
 [https://github.com/dhruvkajla0001/autonomous-trailer-director](https://github.com/dhruvkajla0001/autonomous-trailer-director)
+
 
 

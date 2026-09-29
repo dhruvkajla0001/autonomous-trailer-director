@@ -1,11 +1,14 @@
+Absolutely. Here is the **complete clean README in one box** so you can directly copy it into GitHub's `README.md` editor.
 
+````markdown
 # 🎬 Autonomous Trailer Director
 
 > **An agentic AI system that plans, verifies, and selectively repairs audience-specific trailers from a single episode package.**
 
 The **Autonomous Trailer Director** transforms one episode into multiple audience-specific trailer strategies while preserving story truth, spoiler boundaries, cultural respect, contractual rights, policy compliance, source accuracy, accessibility, and budget constraints.
 
-The system does not simply generate plausible trailer ideas.  
+The system does not simply generate plausible trailer ideas.
+
 It **plans → verifies → repairs → re-verifies** before accepting a trailer plan.
 
 ---
@@ -642,7 +645,7 @@ The test suite covers:
 * changed-contract recovery
 * repair and re-verification
 
-Expected result:
+Current test result:
 
 ```text
 31 passed
@@ -771,12 +774,14 @@ The project prioritizes:
 
 ## ⭐ Project Status
 
-**Implementation:** Complete
-**Mock Pipeline:** Passing
-**Automated Tests:** 31 passing
-**Recovery Tests:** Covered
-**Machine-readable Outputs:** Available
-**Documentation:** Complete
+| Area                     | Status       |
+| ------------------------ | ------------ |
+| Implementation           | ✅ Complete   |
+| Mock Pipeline            | ✅ Passing    |
+| Automated Tests          | ✅ 31 Passing |
+| Recovery Tests           | ✅ Covered    |
+| Machine-readable Outputs | ✅ Available  |
+| Documentation            | ✅ Complete   |
 
 ---
 
@@ -785,5 +790,5 @@ The project prioritizes:
 **GitHub:**
 [https://github.com/dhruvkajla0001/autonomous-trailer-director](https://github.com/dhruvkajla0001/autonomous-trailer-director)
 
-
-
+```
+```

@@ -1,0 +1,14 @@
+{
+  "is_demo_data": true,
+  "contracts": [
+    {"contract_id": "contract_actor_nila", "resource_id": "actor_nila", "resource_type": "actor", "promotional_use_allowed": true, "territories": ["IN"], "evidence": ["contract:actor_nila"]},
+    {"contract_id": "contract_actor_meera", "resource_id": "actor_meera", "resource_type": "actor", "promotional_use_allowed": true, "territories": ["IN"], "evidence": ["contract:actor_meera"]},
+    {"contract_id": "contract_actor_aaji", "resource_id": "actor_aaji", "resource_type": "actor", "promotional_use_allowed": true, "territories": ["IN"], "evidence": ["contract:actor_aaji"]},
+    {"contract_id": "contract_actor_kabir", "resource_id": "actor_kabir", "resource_type": "actor", "promotional_use_allowed": true, "territories": ["IN"], "evidence": ["contract:actor_kabir"]},
+    {"contract_id": "contract_track_home", "resource_id": "track_home_01", "resource_type": "music", "promotional_use_allowed": true, "territories": ["IN"], "evidence": ["contract:track_home_01"]},
+    {"contract_id": "contract_track_beat", "resource_id": "track_beat_01", "resource_type": "music", "promotional_use_allowed": true, "territories": ["IN"], "evidence": ["contract:track_beat_01"]},
+    {"contract_id": "contract_track_folk", "resource_id": "track_folk_01", "resource_type": "music", "promotional_use_allowed": true, "territories": ["IN"], "expires_at": "2027-03-31", "restrictions": ["Use with culturally accurate subtitle review."], "evidence": ["contract:track_folk_01"]},
+    {"contract_id": "contract_track_storm", "resource_id": "track_storm_01", "resource_type": "music", "promotional_use_allowed": true, "territories": ["IN"], "evidence": ["contract:track_storm_01"]},
+    {"contract_id": "contract_track_uk_only", "resource_id": "track_licensed_uk_only", "resource_type": "music", "promotional_use_allowed": false, "territories": ["GB"], "restrictions": ["No Indian promotional use."], "evidence": ["contract:track_licensed_uk_only"]}
+  ]
+}

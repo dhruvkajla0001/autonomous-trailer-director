@@ -1,0 +1,11 @@
+{
+  "is_demo_data": true,
+  "constraints": [
+    {"constraint_id": "policy_no_spoilers", "constraint_type": "spoiler", "description": "Do not expose protected story facts, their dialogue, or a sequence that reveals them.", "evidence": ["policy:spoilers"]},
+    {"constraint_id": "policy_family_rating", "constraint_type": "rating", "description": "Family marketing excludes frightening and suggestive imagery.", "applies_to_audiences": ["family"], "prohibited_tags": ["frightening", "darkness", "suggestive"], "evidence": ["policy:family_rating"]},
+    {"constraint_id": "policy_dialect_respect", "constraint_type": "cultural_respect", "description": "Dialect use must be story-grounded, accurately subtitled, and never used as comic shorthand.", "applies_to_audiences": ["dialect_region"], "prohibited_tags": ["dialect_as_joke", "stereotype"], "required_tags": ["dialect"], "evidence": ["policy:dialect_respect"]},
+    {"constraint_id": "policy_accessibility", "constraint_type": "accessibility", "description": "Each spoken segment needs a readable subtitle or an equivalent text treatment.", "evidence": ["policy:accessibility"]},
+    {"constraint_id": "policy_budget", "constraint_type": "budget", "description": "Stay within the configured mock processing budget.", "evidence": ["policy:budget"]}
+  ],
+  "budget": {"max_total_cost_usd": 2.5, "max_model_calls": 6, "max_media_analysis_minutes": 12, "evidence": ["cost_sheet:demo_v1"]}
+}

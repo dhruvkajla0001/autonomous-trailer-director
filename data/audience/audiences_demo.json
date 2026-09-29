@@ -1,0 +1,12 @@
+{
+  "is_demo_data": true,
+  "audiences": [
+    {"audience_id": "family", "display_name": "Family viewers", "objective": "Communicate warmth, manageable stakes, and shared entertainment.", "preferred_emotions": ["warmth", "hope", "wonder"], "preferred_tags": ["family", "ritual", "lantern"], "prohibited_tags": ["frightening", "darkness", "suggestive"], "cultural_guidance": ["Use only broadly understandable story moments."], "evidence": ["audience:family_demo"], "assumptions": ["Preferences are hypotheses, not demographic facts."]},
+    {"audience_id": "young_adult", "display_name": "Young adult viewers", "objective": "Highlight pace, humour, identity, and character conflict without false intensity.", "preferred_emotions": ["energy", "humour", "resolve"], "preferred_tags": ["humour", "friendship", "journey"], "evidence": ["audience:young_adult_demo"], "assumptions": ["Historic engagement is a ranking signal only."]},
+    {"audience_id": "dialect_region", "display_name": "Dialect-region viewers", "objective": "Demonstrate authentic language and cultural context through story-grounded moments.", "preferred_emotions": ["belonging", "wonder", "warmth"], "preferred_tags": ["dialect", "family_ritual", "belonging"], "cultural_guidance": ["Use the dialect song as family memory, never as a joke.", "Require subtitle review by a qualified dialect reviewer."], "evidence": ["audience:dialect_region_demo"], "assumptions": ["Language preference does not imply a shared identity or taste."]}
+  ],
+  "historic_performance": [
+    {"scene_id": "scene_03", "metric": "completion_rate", "value": 0.78, "note": "Mock historical hypothesis; it cannot override policy or spoiler checks."},
+    {"scene_id": "scene_07", "metric": "click_through_rate", "value": 0.91, "note": "Intentionally high-performing but protected spoiler scene."}
+  ]
+}

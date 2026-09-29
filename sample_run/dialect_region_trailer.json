@@ -1,0 +1,600 @@
+{
+  "trailer_id": "dialect_region_v1",
+  "audience_id": "dialect_region",
+  "audience": "Dialect-region viewers",
+  "duration_seconds": 31.0,
+  "audience_objective": "Demonstrate authentic language and cultural context through story-grounded moments.",
+  "audience_promise": "A family mystery carried by a familiar ritual and a song that belongs inside the story.",
+  "emotional_journey": [
+    "belonging",
+    "warmth",
+    "curiosity",
+    "resolve"
+  ],
+  "planning_hypotheses": [
+    "Audience strategy is grounded in approved profile evidence for dialect_region; it is not inferred from identity alone.",
+    "Historical click_through_rate=0.91 for scene_07 is excluded because the story map protects it as a spoiler."
+  ],
+  "segments": [
+    {
+      "segment_id": "seg_01",
+      "source_in": "00:01:12.000",
+      "source_out": "00:01:23.000",
+      "scene_id": "scene_05",
+      "video": "scene_05",
+      "audio": "track_folk_01",
+      "subtitle": "The lantern calls us home.",
+      "voice_over": null,
+      "text_card": "A familiar song. A new mystery.",
+      "transition_after": "cut",
+      "reason": "Leads with story-grounded dialect and an approved translated subtitle, never a joke.",
+      "evidence": [
+        "scene:scene_05",
+        "dialogue:dialogue_05_01",
+        "contract:actor_aaji",
+        "contract:actor_nila",
+        "contract:actor_meera",
+        "contract:track_folk_01"
+      ],
+      "risk_flags": []
+    },
+    {
+      "segment_id": "seg_02",
+      "source_in": "00:00:06.000",
+      "source_out": "00:00:13.000",
+      "scene_id": "scene_01",
+      "video": "scene_01",
+      "audio": "track_home_01",
+      "subtitle": "Tonight, every lantern gets a wish.",
+      "voice_over": null,
+      "text_card": null,
+      "transition_after": "cut",
+      "reason": "Connects the song to the family ritual already established in the episode.",
+      "evidence": [
+        "scene:scene_01",
+        "dialogue:dialogue_01_01",
+        "contract:actor_nila",
+        "contract:actor_meera",
+        "contract:actor_aaji",
+        "contract:track_home_01"
+      ],
+      "risk_flags": []
+    },
+    {
+      "segment_id": "seg_03",
+      "source_in": "00:00:20.000",
+      "source_out": "00:00:27.000",
+      "scene_id": "scene_02",
+      "video": "scene_02",
+      "audio": "track_home_01",
+      "subtitle": "It was here this morning.",
+      "voice_over": null,
+      "text_card": null,
+      "transition_after": "cut",
+      "reason": "States the shared story problem without assuming audience identity or taste.",
+      "evidence": [
+        "scene:scene_02",
+        "dialogue:dialogue_02_01",
+        "contract:actor_nila",
+        "contract:actor_meera",
+        "contract:track_home_01"
+      ],
+      "risk_flags": []
+    },
+    {
+      "segment_id": "seg_04",
+      "source_in": "00:01:37.000",
+      "source_out": "00:01:43.000",
+      "scene_id": "scene_06",
+      "video": "scene_06",
+      "audio": "track_beat_01",
+      "subtitle": "Then we find it together.",
+      "voice_over": null,
+      "text_card": null,
+      "transition_after": "fade",
+      "reason": "Ends on collaboration and a human approval-worthy subtitle treatment.",
+      "evidence": [
+        "scene:scene_06",
+        "dialogue:dialogue_06_01",
+        "contract:actor_nila",
+        "contract:actor_meera",
+        "contract:track_beat_01"
+      ],
+      "risk_flags": []
+    }
+  ],
+  "validation": {
+    "status": "PASS",
+    "checks": [
+      {
+        "check_id": "scene:seg_01",
+        "check_type": "scene_existence",
+        "status": "PASS",
+        "message": "Selected scene exists in the supplied episode package.",
+        "evidence": [
+          "scene:scene_05"
+        ],
+        "affected_segments": [
+          "seg_01"
+        ],
+        "recommended_repair": null
+      },
+      {
+        "check_id": "source_range:seg_01",
+        "check_type": "source_accuracy",
+        "status": "PASS",
+        "message": "Segment timecodes and video reference are grounded in the selected scene.",
+        "evidence": [
+          "scene:scene_05"
+        ],
+        "affected_segments": [
+          "seg_01"
+        ],
+        "recommended_repair": null
+      },
+      {
+        "check_id": "evidence:seg_01",
+        "check_type": "evidence",
+        "status": "PASS",
+        "message": "All segment evidence references resolve to approved source records.",
+        "evidence": [
+          "scene:scene_05",
+          "dialogue:dialogue_05_01",
+          "contract:actor_aaji",
+          "contract:actor_nila",
+          "contract:actor_meera",
+          "contract:track_folk_01"
+        ],
+        "affected_segments": [
+          "seg_01"
+        ],
+        "recommended_repair": null
+      },
+      {
+        "check_id": "spoiler:seg_01",
+        "check_type": "spoiler",
+        "status": "PASS",
+        "message": "No protected spoiler fact is referenced by this segment.",
+        "evidence": [
+          "scene:scene_05"
+        ],
+        "affected_segments": [
+          "seg_01"
+        ],
+        "recommended_repair": null
+      },
+      {
+        "check_id": "rights:seg_01",
+        "check_type": "rights",
+        "status": "PASS",
+        "message": "Actors and selected audio are licensed for IN promotional use.",
+        "evidence": [
+          "contract:actor_aaji",
+          "contract:actor_nila",
+          "contract:actor_meera",
+          "contract:track_folk_01"
+        ],
+        "affected_segments": [
+          "seg_01"
+        ],
+        "recommended_repair": null
+      },
+      {
+        "check_id": "policy:seg_01",
+        "check_type": "audience_policy",
+        "status": "PASS",
+        "message": "Scene complies with the configured audience tag restrictions.",
+        "evidence": [
+          "scene:scene_05",
+          "audience:dialect_region_demo",
+          "policy:spoilers",
+          "policy:dialect_respect",
+          "policy:accessibility",
+          "policy:budget"
+        ],
+        "affected_segments": [
+          "seg_01"
+        ],
+        "recommended_repair": null
+      },
+      {
+        "check_id": "accessibility:seg_01",
+        "check_type": "accessibility",
+        "status": "PASS",
+        "message": "Spoken content has a readable subtitle.",
+        "evidence": [
+          "scene:scene_05"
+        ],
+        "affected_segments": [
+          "seg_01"
+        ],
+        "recommended_repair": null
+      },
+      {
+        "check_id": "scene:seg_02",
+        "check_type": "scene_existence",
+        "status": "PASS",
+        "message": "Selected scene exists in the supplied episode package.",
+        "evidence": [
+          "scene:scene_01"
+        ],
+        "affected_segments": [
+          "seg_02"
+        ],
+        "recommended_repair": null
+      },
+      {
+        "check_id": "source_range:seg_02",
+        "check_type": "source_accuracy",
+        "status": "PASS",
+        "message": "Segment timecodes and video reference are grounded in the selected scene.",
+        "evidence": [
+          "scene:scene_01"
+        ],
+        "affected_segments": [
+          "seg_02"
+        ],
+        "recommended_repair": null
+      },
+      {
+        "check_id": "evidence:seg_02",
+        "check_type": "evidence",
+        "status": "PASS",
+        "message": "All segment evidence references resolve to approved source records.",
+        "evidence": [
+          "scene:scene_01",
+          "dialogue:dialogue_01_01",
+          "contract:actor_nila",
+          "contract:actor_meera",
+          "contract:actor_aaji",
+          "contract:track_home_01"
+        ],
+        "affected_segments": [
+          "seg_02"
+        ],
+        "recommended_repair": null
+      },
+      {
+        "check_id": "spoiler:seg_02",
+        "check_type": "spoiler",
+        "status": "PASS",
+        "message": "No protected spoiler fact is referenced by this segment.",
+        "evidence": [
+          "scene:scene_01"
+        ],
+        "affected_segments": [
+          "seg_02"
+        ],
+        "recommended_repair": null
+      },
+      {
+        "check_id": "rights:seg_02",
+        "check_type": "rights",
+        "status": "PASS",
+        "message": "Actors and selected audio are licensed for IN promotional use.",
+        "evidence": [
+          "contract:actor_nila",
+          "contract:actor_meera",
+          "contract:actor_aaji",
+          "contract:track_home_01"
+        ],
+        "affected_segments": [
+          "seg_02"
+        ],
+        "recommended_repair": null
+      },
+      {
+        "check_id": "policy:seg_02",
+        "check_type": "audience_policy",
+        "status": "PASS",
+        "message": "Scene complies with the configured audience tag restrictions.",
+        "evidence": [
+          "scene:scene_01",
+          "audience:dialect_region_demo",
+          "policy:spoilers",
+          "policy:dialect_respect",
+          "policy:accessibility",
+          "policy:budget"
+        ],
+        "affected_segments": [
+          "seg_02"
+        ],
+        "recommended_repair": null
+      },
+      {
+        "check_id": "accessibility:seg_02",
+        "check_type": "accessibility",
+        "status": "PASS",
+        "message": "Spoken content has a readable subtitle.",
+        "evidence": [
+          "scene:scene_01"
+        ],
+        "affected_segments": [
+          "seg_02"
+        ],
+        "recommended_repair": null
+      },
+      {
+        "check_id": "scene:seg_03",
+        "check_type": "scene_existence",
+        "status": "PASS",
+        "message": "Selected scene exists in the supplied episode package.",
+        "evidence": [
+          "scene:scene_02"
+        ],
+        "affected_segments": [
+          "seg_03"
+        ],
+        "recommended_repair": null
+      },
+      {
+        "check_id": "source_range:seg_03",
+        "check_type": "source_accuracy",
+        "status": "PASS",
+        "message": "Segment timecodes and video reference are grounded in the selected scene.",
+        "evidence": [
+          "scene:scene_02"
+        ],
+        "affected_segments": [
+          "seg_03"
+        ],
+        "recommended_repair": null
+      },
+      {
+        "check_id": "evidence:seg_03",
+        "check_type": "evidence",
+        "status": "PASS",
+        "message": "All segment evidence references resolve to approved source records.",
+        "evidence": [
+          "scene:scene_02",
+          "dialogue:dialogue_02_01",
+          "contract:actor_nila",
+          "contract:actor_meera",
+          "contract:track_home_01"
+        ],
+        "affected_segments": [
+          "seg_03"
+        ],
+        "recommended_repair": null
+      },
+      {
+        "check_id": "spoiler:seg_03",
+        "check_type": "spoiler",
+        "status": "PASS",
+        "message": "No protected spoiler fact is referenced by this segment.",
+        "evidence": [
+          "scene:scene_02"
+        ],
+        "affected_segments": [
+          "seg_03"
+        ],
+        "recommended_repair": null
+      },
+      {
+        "check_id": "rights:seg_03",
+        "check_type": "rights",
+        "status": "PASS",
+        "message": "Actors and selected audio are licensed for IN promotional use.",
+        "evidence": [
+          "contract:actor_nila",
+          "contract:actor_meera",
+          "contract:track_home_01"
+        ],
+        "affected_segments": [
+          "seg_03"
+        ],
+        "recommended_repair": null
+      },
+      {
+        "check_id": "policy:seg_03",
+        "check_type": "audience_policy",
+        "status": "PASS",
+        "message": "Scene complies with the configured audience tag restrictions.",
+        "evidence": [
+          "scene:scene_02",
+          "audience:dialect_region_demo",
+          "policy:spoilers",
+          "policy:dialect_respect",
+          "policy:accessibility",
+          "policy:budget"
+        ],
+        "affected_segments": [
+          "seg_03"
+        ],
+        "recommended_repair": null
+      },
+      {
+        "check_id": "accessibility:seg_03",
+        "check_type": "accessibility",
+        "status": "PASS",
+        "message": "Spoken content has a readable subtitle.",
+        "evidence": [
+          "scene:scene_02"
+        ],
+        "affected_segments": [
+          "seg_03"
+        ],
+        "recommended_repair": null
+      },
+      {
+        "check_id": "scene:seg_04",
+        "check_type": "scene_existence",
+        "status": "PASS",
+        "message": "Selected scene exists in the supplied episode package.",
+        "evidence": [
+          "scene:scene_06"
+        ],
+        "affected_segments": [
+          "seg_04"
+        ],
+        "recommended_repair": null
+      },
+      {
+        "check_id": "source_range:seg_04",
+        "check_type": "source_accuracy",
+        "status": "PASS",
+        "message": "Segment timecodes and video reference are grounded in the selected scene.",
+        "evidence": [
+          "scene:scene_06"
+        ],
+        "affected_segments": [
+          "seg_04"
+        ],
+        "recommended_repair": null
+      },
+      {
+        "check_id": "evidence:seg_04",
+        "check_type": "evidence",
+        "status": "PASS",
+        "message": "All segment evidence references resolve to approved source records.",
+        "evidence": [
+          "scene:scene_06",
+          "dialogue:dialogue_06_01",
+          "contract:actor_nila",
+          "contract:actor_meera",
+          "contract:track_beat_01"
+        ],
+        "affected_segments": [
+          "seg_04"
+        ],
+        "recommended_repair": null
+      },
+      {
+        "check_id": "spoiler:seg_04",
+        "check_type": "spoiler",
+        "status": "PASS",
+        "message": "No protected spoiler fact is referenced by this segment.",
+        "evidence": [
+          "scene:scene_06"
+        ],
+        "affected_segments": [
+          "seg_04"
+        ],
+        "recommended_repair": null
+      },
+      {
+        "check_id": "rights:seg_04",
+        "check_type": "rights",
+        "status": "PASS",
+        "message": "Actors and selected audio are licensed for IN promotional use.",
+        "evidence": [
+          "contract:actor_nila",
+          "contract:actor_meera",
+          "contract:track_beat_01"
+        ],
+        "affected_segments": [
+          "seg_04"
+        ],
+        "recommended_repair": null
+      },
+      {
+        "check_id": "policy:seg_04",
+        "check_type": "audience_policy",
+        "status": "PASS",
+        "message": "Scene complies with the configured audience tag restrictions.",
+        "evidence": [
+          "scene:scene_06",
+          "audience:dialect_region_demo",
+          "policy:spoilers",
+          "policy:dialect_respect",
+          "policy:accessibility",
+          "policy:budget"
+        ],
+        "affected_segments": [
+          "seg_04"
+        ],
+        "recommended_repair": null
+      },
+      {
+        "check_id": "accessibility:seg_04",
+        "check_type": "accessibility",
+        "status": "PASS",
+        "message": "Spoken content has a readable subtitle.",
+        "evidence": [
+          "scene:scene_06"
+        ],
+        "affected_segments": [
+          "seg_04"
+        ],
+        "recommended_repair": null
+      },
+      {
+        "check_id": "cultural:dialect_region_v1",
+        "check_type": "cultural_respect",
+        "status": "PASS",
+        "message": "Plan satisfies configured cultural-context requirements without demographic inference.",
+        "evidence": [
+          "audience:dialect_region_demo",
+          "scene:scene_01",
+          "scene:scene_02",
+          "scene:scene_05",
+          "scene:scene_06"
+        ],
+        "affected_segments": [],
+        "recommended_repair": null
+      },
+      {
+        "check_id": "budget:dialect_region_v1",
+        "check_type": "budget",
+        "status": "PASS",
+        "message": "Estimated cost $0.46 is within the $2.50 budget.",
+        "evidence": [
+          "cost_sheet:demo_v1"
+        ],
+        "affected_segments": [],
+        "recommended_repair": null
+      },
+      {
+        "check_id": "duration:dialect_region_v1",
+        "check_type": "timing",
+        "status": "PASS",
+        "message": "Declared duration matches source clip durations.",
+        "evidence": [
+          "trailer:dialect_region_v1"
+        ],
+        "affected_segments": [],
+        "recommended_repair": null
+      }
+    ],
+    "failures": [],
+    "warnings": [],
+    "evidence": [
+      "scene:scene_05",
+      "dialogue:dialogue_05_01",
+      "contract:actor_aaji",
+      "contract:actor_nila",
+      "contract:actor_meera",
+      "contract:track_folk_01",
+      "audience:dialect_region_demo",
+      "policy:spoilers",
+      "policy:dialect_respect",
+      "policy:accessibility",
+      "policy:budget",
+      "scene:scene_01",
+      "dialogue:dialogue_01_01",
+      "contract:track_home_01",
+      "scene:scene_02",
+      "dialogue:dialogue_02_01",
+      "scene:scene_06",
+      "dialogue:dialogue_06_01",
+      "contract:track_beat_01",
+      "cost_sheet:demo_v1",
+      "trailer:dialect_region_v1"
+    ],
+    "affected_segments": [
+      "seg_01",
+      "seg_02",
+      "seg_03",
+      "seg_04"
+    ],
+    "recommended_repair": null,
+    "risk_flags": []
+  },
+  "warnings": [],
+  "assumptions": [
+    "Language preference does not imply a shared identity or taste."
+  ],
+  "estimated_cost_usd": 0.46,
+  "lower_cost_fallback": "Retain the approved translated subtitle and use a pre-reviewed text card; do not synthesize dialect voice-over.",
+  "revision": 0
+}

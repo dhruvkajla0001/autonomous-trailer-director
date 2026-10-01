@@ -30,6 +30,7 @@ from src.agents.repair_agent import RepairAgent
 from src.agents.story_agent import StoryAgent
 from src.agents.verifier_agent import VerifierAgent
 from src.models.trailer import DecisionLog, TrailerPlan, ValidationResult
+from src.providers.llm import OllamaProvider
 from src.repository.constraint_repository import (
     ConstraintIngestionError,
     load_constraint_map,
@@ -50,7 +51,7 @@ def build_parser() -> argparse.ArgumentParser:
 
     parser.add_argument(
         "--mode",
-        choices=("mock", "replay"),
+        choices=("mock", "llm", "replay"),
         default="mock",
         help=(
             "Execution mode. Mock mode is deterministic and "
@@ -347,17 +348,29 @@ def main(
             "workflow."
         )
         print(
-            "Use --mode mock. Mock mode requires no API key "
-            "and is deterministic."
+            "Use --mode mock or --mode llm. "
+            "Mock mode requires no API key and is deterministic."
         )
         return 0
+
+    # -----------------------------------------------------------------
+    # Select LLM provider
+    # -----------------------------------------------------------------
+
+    provider = None
+
+    if args.mode == "llm":
+        provider = OllamaProvider(
+        timeout_seconds=180.0)
 
     # -----------------------------------------------------------------
     # 1. Build story map
     # -----------------------------------------------------------------
 
     try:
-        story_map = StoryAgent().build_story_map(
+        story_map = StoryAgent(
+            provider=provider,
+        ).build_story_map(
             args.episode_path
         )
 
@@ -439,7 +452,7 @@ def main(
     planner = PlannerAgent(
         story_map=story_map,
         constraint_map=constraint_map,
-        provider=None,
+        provider=provider,
     )
 
     try:

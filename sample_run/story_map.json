@@ -474,6 +474,27 @@
   "source_refs": [
     "demo:episode:monsoon_lanterns_e01"
   ],
-  "premise": null,
-  "uncertainties": []
+  "premise": "Nila's presumed-dead father is alive and connected to the lantern signal.",
+  "uncertainties": [
+    {
+      "claim_id": "claim_01",
+      "claim": "Nila's presumed-dead father is alive and connected to the lantern signal.",
+      "evidence": [
+        "scene:scene_07",
+        "dialogue:dialogue_07_01"
+      ],
+      "confidence": 0.8,
+      "reason": "The source notes mention a disagreement and a recording that changes Nila's beliefs about her father."
+    },
+    {
+      "claim_id": "claim_02",
+      "claim": "The family lantern signal is a real event.",
+      "evidence": [
+        "scene:scene_05",
+        "dialogue:dialogue_05_01"
+      ],
+      "confidence": 0.9,
+      "reason": "The source notes mention a power cut and a signal that Aaji identifies by singing a family lantern song."
+    }
+  ]
 }
